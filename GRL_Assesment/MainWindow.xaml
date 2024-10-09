@@ -1,0 +1,12 @@
+﻿
+    <Window x:Class="SubfolderSelector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Subfolder Selector" Height="300" Width="400">
+    <Grid Margin="10">
+        <Label Content="Folder Location" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="FolderPathTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,20,0,0" IsReadOnly="True"/>
+        <Button Content="Browse Folder" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,50,0,0" Click="BrowseFolderButton_Click"/>
+        <ComboBox Name="SubfolderComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,90,0,0" SelectionChanged="SubfolderComboBox_SelectionChanged"/>
+    </Grid>
+</Window>
